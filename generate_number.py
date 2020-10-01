@@ -3,6 +3,9 @@
 def words_list():
 	a = open('file.txt','r')
 	b = []
-	for i in a:
+	c = []
+	for i in a :
 		b.append(i)
-	return (b,len(b))
+	for j in range(len(b)) :
+		c.append(b[j][:len(b[j])-1])
+	return (c,len(b))
