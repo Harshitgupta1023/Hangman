@@ -6,6 +6,7 @@ def words_list():
 	c = []
 	for i in a :
 		b.append(i)
-	for j in range(len(b)) :
+	for j in range(len(b)-1) :
 		c.append(b[j][:len(b[j])-1])
+	c.append(b[-1])
 	return (c,len(b))
